@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # angular-shopping-list
 Basic Shopping List to add and delete items
 =======
-# Assignment2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
