@@ -1,0 +1,29 @@
+.mItems{
+    color: navy;
+}
+
+
+.gridArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+}
+
+.common {
+    display: inline-block;
+
+    padding: 10px;
+    margin: 15px;
+    min-height: 200px;
+    min-width: 40%;
+    background-color: #FFE4C4; /* Color de fondo */
+    border: 5px solid navy; /* Borde azul oscuro */
+}
+
+
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+

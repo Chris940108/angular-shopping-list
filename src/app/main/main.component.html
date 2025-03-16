@@ -1,0 +1,32 @@
+<section class="gridArea">
+    <div class="shopping common">
+        <h3>Add a Shopping Item</h3>
+        <input matInput [(ngModel)] = "shoppingItem"/>
+        @if (shoppingList.includes(shoppingItem | lowercase)){
+            <button mat-raised-button (click)="deleteItem(shoppingItem.toLocaleLowerCase())">Delete Item</button>
+        }@else{
+            
+            <button mat-raised-button  [disabled] = "shoppingItem === '' " (click)="addItem(shoppingItem.toLowerCase())">Add to List</button>
+        }
+        <button mat-raised-button  [disabled] = "shoppingList.length === 0 "(click)="clearList()">Remove All</button>
+<br>
+        <span>{{shoppingItem}}</span>
+        
+    </div>
+
+    <div class="listArea common">
+        <h3 [ngClass]="{mItems: shoppingList.length > 3}">ShoppingList</h3>
+        
+         @for (item of shoppingList; track $index) {
+            <ul>
+                <li>
+                    {{item | titlecase}}
+                </li>
+             </ul>
+         }
+         
+
+    </div>
+
+
+</section>
