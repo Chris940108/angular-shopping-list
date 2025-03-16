@@ -2,6 +2,14 @@
 Basic Shopping List to add and delete items
 =======
 
+## 📸 Screenshots
+![Shopping List Interface](./screenshots/initial_app.png)
+![Adding Item](./screenshots/adding_item.png)
+![Delete Item](./screenshots/delete_item.png)
+![Removing All](./screenshots/remove_all.png)
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
 ## Development server
